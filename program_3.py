@@ -1,3 +1,7 @@
+#Programmer: Teresa Fischer
+#Date: 9/18/2024
+#Title: Program #3: Shipping Charges
+
 # Programming Excersize 3-13
 
 # The Fast Freight Shipping Company charges the following rates:
@@ -13,7 +17,14 @@ def weight_conversion(weight):
     # Calculate the shipping charge.
     shippingCost = 0.0
     ######################
-    # WRITE YOUR CODE HERE
+    if weight <= 2:
+        shippingCost = 1.50
+    elif weight > 2 and weight <= 6:
+        shippingCost = 3.00
+    elif weight > 6 and weight <= 10:
+        shippingCost = 4.00
+    else:
+        shippingCost = 4.75
     ######################
     
     return shippingCost
